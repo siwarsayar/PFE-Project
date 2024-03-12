@@ -1,0 +1,22 @@
+
+.UploadButton {
+    border: 2px dashed #ccc; 
+    padding: 20px; 
+    text-align: center; 
+    cursor: pointer; 
+  }
+  
+  .UploadButton:hover {
+    border-color: #aaa; 
+  }
+  
+  .UploadButton-label {
+    display: block; 
+    font-size: 16px; 
+    color: #333; 
+  }
+  
+  .UploadButton-input {
+    display: none; 
+  }
+  

@@ -1,0 +1,19 @@
+
+input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  
+  .input-primaire {
+    border-color: #007bff; 
+    outline: none; 
+  }
+  
+  .input-primaire:focus {
+    border-color: #0056b3; 
+  }
+  

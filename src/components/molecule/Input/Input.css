@@ -1,0 +1,18 @@
+
+
+.InputMolecule {
+    margin-bottom: 20px; 
+  }
+  
+  .InputMolecule-label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+  }
+  
+  .InputMolecule-error {
+    color: red; 
+    font-size: 12px; 
+    margin-top: 5px; 
+  }
+  

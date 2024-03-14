@@ -1,0 +1,10 @@
+.RadioButton {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .RadioButton-input {
+    margin-right: 8px; 
+  }
+  

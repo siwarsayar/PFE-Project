@@ -1,18 +1,21 @@
+.MoleculeContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
 
+.LabelContainer {
+  margin-bottom: 8px;
+}
 
-.InputMolecule {
-    margin-bottom: 20px; 
-  }
-  
-  .InputMolecule-label {
-    display: block; 
-    margin-bottom: 5px; 
-    font-weight: bold; 
-  }
-  
-  .InputMolecule-error {
-    color: red; 
-    font-size: 12px; 
-    margin-top: 5px; 
-  }
-  
+.InputContainer {
+  margin-bottom: 16px;
+}
+
+.AtomLabel {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+  font-weight: bold;
+}

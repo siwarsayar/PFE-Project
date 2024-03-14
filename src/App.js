@@ -1,13 +1,15 @@
 
-import AtomInput from './components/atom/input/AtomInput';
-import AtomUpload from './components/atom/Button Upload/AtomUpload';
-//import Checkbox from './components/atom/Checkbox/Checkbox';
+import Login from "./components/organism/Login/Login";
+
+
 function App() {
     return(
-    <div>
-         <AtomInput type="email" />
+    <div className="App"> 
         
-         <AtomUpload />
+     <Login />    
+ 
+
+
         
     </div>
     )

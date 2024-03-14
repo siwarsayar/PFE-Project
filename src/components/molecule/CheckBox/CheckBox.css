@@ -1,0 +1,11 @@
+.Checkbox {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 16px; 
+  }
+  
+  .Checkbox-label {
+    margin-left: 8px; 
+    font-size: 16px; 
+  }
+  

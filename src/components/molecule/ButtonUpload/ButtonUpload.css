@@ -1,0 +1,31 @@
+/* UploadWithLabel.css */
+
+.UploadWithLabel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+  }
+  
+  .UploadWithLabel .AtomLabel {
+    margin-right: 10px;
+  }
+  
+  .UploadWithLabel .AtomUpload {
+    border: 2px dashed #ccc;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .UploadWithLabel .AtomUpload:hover {
+    border-color: #aaa;
+  }
+  
+  .UploadWithLabel .UploadButton-label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .UploadWithLabel .UploadButton-input {
+    display: none;
+  }
+  

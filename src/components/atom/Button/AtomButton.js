@@ -1,50 +1,54 @@
 import React from 'react';
-import classnames from 'classnames';
-import styles from './AtomButton.css';
+import classNames from 'classnames';
+import './AtomButton.css'; 
 
-export const ButtonType = {
-  BUTTON: 'button',
-  RESET: 'reset',
-  SUBMIT: 'submit',
-};
-
-export const ButtonTheme = {
-  DEFAULT: 'default',
-  ROUNDED: 'rounded',
-};
-
-export const ButtonSize = {
-  SMALL: 'small',
-  MEDIUM: 'medium',
-  LARGE: 'large',
-};
-
-const AtomButton = (props) => {
-  const { type, onClick, children, theme, size, className, disabled } = props;
-  const classProps = classnames(
-    styles.button,
-    styles[theme],
-    styles[size],
+function AtomButton({
+  children,
+  primary,
+  secondary,
+  success,
+  warning,
+  danger,
+  outline,
+  rounded,
+  ...rest
+}) {
+  const classes = classNames(
+    rest.className,
+    'AtomButton',
     {
-      [styles.disabled]: disabled,
-    },
-    className
+      'primary': primary,
+      'secondary': secondary,
+      'success': success,
+      'warning': warning,
+      'danger': danger,
+      'outline': outline,
+      'rounded': rounded,
+    }
   );
 
   return (
-    <button type={type} onClick={onClick} disabled={disabled} className={classProps}>
+    <button {...rest} className={classes}>
       {children}
     </button>
   );
-};
+}
 
-AtomButton.defaultProps = {
-  type: ButtonType.BUTTON,
-  theme: ButtonTheme.DEFAULT,
-  size: ButtonSize.MEDIUM,
-  onClick: () => {},
-  className: '',
-  disabled: false,
+AtomButton.propTypes = {
+  checkVariationValue: ({ primary, secondary, success, warning, danger }) => {
+    const count =
+      Number(!!primary) +
+      Number(!!secondary) +
+      Number(!!warning) +
+      Number(!!success) +
+      Number(!!danger);
+
+    if (count > 1) {
+      return new Error(
+        'Only one of primary, secondary, success, warning, danger can be true'
+      );
+    }
+  },
 };
 
 export default AtomButton;

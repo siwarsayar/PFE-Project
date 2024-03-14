@@ -1,5 +1,5 @@
 import React from 'react';
-import AtomInput from '../components/input/AtomInput';
+import AtomInput from '../../atom/input/AtomInput';
 import './Input.css'; 
 
 const Input = ({ label, errorMessage, ...inputProps }) => {

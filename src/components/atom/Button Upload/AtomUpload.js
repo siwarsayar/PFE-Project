@@ -19,11 +19,7 @@ const AtomUpload = ({ onFileUpload }) => {
       className="UploadButton" 
       onDrop={handleDrop} 
       onDragOver={handleDragOver}
-      // Si vous voulez styliser l'apparence de la zone de dépôt, vous pouvez ajouter des classes CSS ici
     >
-      <label htmlFor="file-upload" className="UploadButton-label">
-        Glissez-déposez ou cliquez ici pour choisir un fichier
-      </label>
       <input
         id="file-upload"
         type="file"
